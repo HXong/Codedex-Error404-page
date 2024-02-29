@@ -1,0 +1,204 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0F1524;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#background {
+    background-image: url('/Images/initial-backgound.png'); 
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: transform 1s ease-in-out;
+}
+
+#avatar {
+    position: fixed;
+    top: 100px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+#avatar img {
+    width: 100px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.speech-bubble {
+    position: relative;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.speech-bubble::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    margin-top: -10px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent #ffffff transparent;
+    transform: rotate(270deg);
+}
+
+#message {
+    font-family: "Press Start 2P", sans-serif;
+    font-size: 14px;
+    color: black;
+}
+
+
+.container {
+    transition: all 0.3s ease;
+    text-align: center;
+    position: relative; 
+    z-index: 1; 
+    padding-left: 100px;
+}
+
+h1 {
+    font-size: 7em;
+    color: #fff; 
+}
+
+p {
+    font-size: 1.2em;
+    color: #fffcff; 
+}
+
+.error-msg{
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+    top: -60px;
+    left: -5px;
+    margin-top: 40px;
+}
+
+.page-not-found {
+    position: relative;
+    top: -60px; 
+}
+
+.coin-container {
+    text-align: center;
+    position: relative; 
+    width: 100%;
+    height: 100%; 
+}
+
+#coin{
+    position: absolute;
+    top: -286px;
+    left: 104px;
+    width: 110px;
+    height: 105px;
+    transition: transform 0.5s ease-in-out;
+}
+
+
+/* Basic button styles */
+.button {
+    font-family: "Press Start 2P", sans-serif;
+    background-color: #f7d51d; 
+    color: #212529; 
+    padding: 10px 20px; 
+    border: none;
+    border-radius: auto; 
+    box-shadow: 3px 3px rgb(184, 184, 14);
+    cursor: pointer;
+    z-index: 1;
+    transition: background-color 0.3s, color 0.3s;
+    position: absolute;
+    left: 115px;
+}
+
+/* Hover effect */
+.button:hover {
+    background-color: #e7c417; 
+    color: #fff; 
+}
+
+.clicked {
+    background-color: #ffc107; 
+    color: #212529; 
+    border-color: #ffc107;
+}
+
+.hidden-button {
+    background-color: #dc3545; 
+    padding: 15px 15px; 
+    border: none;
+    border-radius: 30px; 
+    box-shadow: 3px 3px darkred;
+    cursor: pointer;
+    opacity: 0; 
+    transition: opacity 0.5s, background-color 0.3s, color 0.3s;
+    position: absolute;
+    left: 240px;
+    
+}
+
+/* Hover effect for red button */
+.hidden-button:hover {
+    background-color: #c82333; 
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#exposed-wires {
+    background-image: url('/Images/exposed-wires.png');
+    background-size: cover;
+    background-position: top;
+    width: 20%;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    left: 50px;
+    z-index: -2; 
+}
+
+#exposed-wires1 {
+    background-image: url('/Images/exposed-wires1.png');
+    background-size: cover;
+    background-position: top right;
+    width: 20%; 
+    height: 100px; 
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: -2;
+}
+
+.press-start-2p-regular {
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 20px;
+}
+
+h1.press-start-2p-regular,
+p.press-start-2p-regular,
+h2.press-start-2p-regular {
+    font-family: 'Press Start 2P', sans-serif;
+    margin-top: 20px;
+}
