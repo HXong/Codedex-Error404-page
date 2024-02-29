@@ -10,7 +10,7 @@ body {
 }
 
 #background {
-    background-image: url('/Images/initial-backgound.png'); 
+    background-image: url('Images/initial-backgound.png'); 
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -166,7 +166,7 @@ p {
 }
 
 #exposed-wires {
-    background-image: url('/Images/exposed-wires.png');
+    background-image: url('Images/exposed-wires.png');
     background-size: cover;
     background-position: top;
     width: 20%;
@@ -178,7 +178,7 @@ p {
 }
 
 #exposed-wires1 {
-    background-image: url('/Images/exposed-wires1.png');
+    background-image: url('Images/exposed-wires1.png');
     background-size: cover;
     background-position: top right;
     width: 20%; 
